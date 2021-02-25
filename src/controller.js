@@ -2,9 +2,13 @@ const discord = require("discord.js");
 const dotenv = require("dotenv");
 
 const express = require("express");
+
+const server = express();
 const client = new discord.Client();
 
 dotenv.config({ path: __dirname.replace("src", "private/") + ".env" });
+
+server.listen(process.env.SERVER_PORT);
 client.login(process.env.BOT_TOKEN);
 
 client.on("ready", () => {
