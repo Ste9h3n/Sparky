@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node src/controller.js"
+    "start": "node src/controller.js"
   },
   "author": "Stephen Kage",
   "license": "MIT"
