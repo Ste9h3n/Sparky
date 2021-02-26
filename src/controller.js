@@ -25,3 +25,7 @@ client.on("message", (msg) => {
     if (!msg.content.startsWith(process.env.BOT_PREFIX)) return;
 })
 
+server.get("/", (req, res) => {
+    res.sendStatus(200).send("");
+})
+
